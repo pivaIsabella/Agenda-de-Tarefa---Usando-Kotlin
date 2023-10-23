@@ -12,6 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.lista_de_tarefas.ui.theme.Black
+import com.example.lista_de_tarefas.ui.theme.Pink40
+import com.example.lista_de_tarefas.ui.theme.White
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -32,6 +34,9 @@ fun CaixadeTexto(
         maxLines = 1,
         colors =TextFieldDefaults.outlinedTextFieldColors(
             textColor = Black,
+            focusedBorderColor = Pink40,
+            focusedLabelColor =  Pink40,
+            cursorColor = White
 
         )
     )
